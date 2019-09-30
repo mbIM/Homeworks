@@ -1,9 +1,7 @@
-n = int(input("Введите число n = "))
-
-def factorial():
+def factorial(n = int(input("Введите число n = "))):
     if n == 0:
         return 1
 
-    return (n-1) * n
+    return factorial(n-1) * n
 
-print("Факториал от n =2", factorial())
+print("Факториал от n =", factorial())
